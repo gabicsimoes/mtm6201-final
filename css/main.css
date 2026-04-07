@@ -1,0 +1,82 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/***********************
+END OF CSS RESET  
+************************/
+
+/* MY STYLING */
+/* I gonna start stablishing the root to create the colour palette that I used on Figma and the fonts and sizes to try to maintain a pattern for the website */
+:root{
+    /* MY COLOURS */
+    --eggplant: #8C3573;
+    --avocado: #ABC510;
+    --pumpkin: #FF991C;
+    --beige: #F0EAD6;
+    --brown: #704214;
+
+    /* MY FONTS (FAMILIES) */
+    --font-heading: "Autour One", serif;
+    --font-body: "Inter", sans-serif;
+
+    /* FONT SIZES (for Mobile Version) based on my Figma Design
+    I found the values in px on Figma and I converted in a Website that I found on Google to put them into rem */
+    /* HEADING SIZES */
+    --fs-h1: 2rem; /* 32px */
+    --fs-h2: 1.375rem; /* 22px */
+    --fs-h3: 1.25rem; /* 20px */
+    --fs-h4: 1rem; /* 16px */
+
+    /* BODY TEXT SIZES */
+    --fs-body: 1rem; /* 16px */ /* For some paragraphs because varies based on the size of the screen */
+    --fs-body-small: 0.75rem; /* 12px */
+
+    /* BUTTON SIZES */
+    --fs-button: 1rem; /* 16px */ /* There are some buttons in my page what I needed to put smaller that's why there're 2 different sizes of the font-button */
+    --fs-button-small: 0.75rem; /* 12px */
+}
