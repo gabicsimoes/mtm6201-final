@@ -122,3 +122,66 @@ p{
 }
 
 /* Styling the Dropdown Menu */
+.dropdown-checkbox{
+    display: none; /* To hide the checkbox */
+}
+
+.header-top{
+    display: flex; /* To put the items in a row because flex as a default is a row. So at this point the logo and the hamburguer are in the same row */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.dropdown-open img{ /* Adjusting the size of the hamburguer icon */
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+
+.logo img{ /* Adjusting the size of the logo */
+    width: 240px;
+    height: auto;
+}
+
+/* Setting the nav-menu "inside" of the hamburguer with it own features like colours and text */
+.mobile-nav{
+    position: fixed; /* This is to fix the menu to do not scroll with the page */
+    top: -100%; /* starts out of the screen and comes from the top like "hidding" */
+    right: 0; /* to maintain it on the right side because the icon is there */
+    width: 30%; /* the size of the box */
+    height: auto; /* Adjust automatically based on the text inside */
+    background-color: var(--brown);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    transition: top 0.3s ease-in-out; /* top means the transition comes from the top sliding vertically */
+}
+
+#dropdown-box:checked ~ .mobile-nav { /* This means when this id is checked the dropdown has to show the sibling .mobile-nav which comes after the dropdown-box. It's like: when the checkbox is checked, slect the sibiling .mobile-nav to appear */
+    top: 0; /* The direction of the menu. Here I have to say that the top that I hidded above (top: -100%) needs to come and show from and stayed at the top */
+}
+
+/* Adjusting the text of the nev inside of the box according to the Figma Design */
+.mobile-nav ul li a{
+    display: block; /* To make this thing behaves like a block */
+    color: var(--beige);
+    font-family: var(--font-heading);
+    font-size: var(--fs-h4);
+    text-decoration: none; /* To remove the underline default for nav links */
+    text-transform: uppercase;
+    padding: 1rem 0; /* The space between the elements inside of the box */
+    border-bottom: 2px solid var(--beige); /* The lines between the text like I have in my design */
+    text-align: left;
+}
+
+.mobile-nav {
+    border-radius: 0 0 8px 8px; /* to put the border in the bottom of the box rounded */
+}
+
+.dropdown-close{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer; /* I noticed that just the X wasn't showing the little hand to indicate that's clicable, so I did the same thing that I did for the hamburguer */
+}
