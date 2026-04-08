@@ -80,3 +80,43 @@ END OF CSS RESET
     --fs-button: 1rem; /* 16px */ /* There are some buttons in my page what I needed to put smaller that's why there're 2 different sizes of the font-button */
     --fs-button-small: 0.75rem; /* 12px */
 }
+
+/* Setting the sizes and colours, the characteristics of the text based on my Figma design */
+body{
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    color: var(--brown);
+    background-color: white;
+}
+
+h1{ /* The H1 I just used for the text in the overlay for the hero banner image */
+    font-family: var(--font-heading);
+    font-size: var(--fs-h1);
+    color: var(--beige);
+}
+
+/* Most of the others "h" is brown, but there are some specific points that is beige, and for this I gonna do in the point specifically, but since most of them are brown i gonna set it up as brown */
+h2{
+    font-family: var(--font-heading);
+    font-size: var(--fs-h2);
+    color: var(--brown);
+}
+
+h3{
+    font-family: var(--font-heading);
+    font-size: var(--fs-h3);
+    color: var(--brown);
+}
+
+h4{
+    font-family: var(--font-heading);
+    font-size: var(--fs-h4);
+    color: var(--brown);
+}
+
+/* I have 2 different types of paragraphs, in some cases they're body-small and other cases they're just body. I choose to put as body (16px) to pick the specific sections that I used 12px to change in that section  */
+p{
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    color: var(--brown);
+}
