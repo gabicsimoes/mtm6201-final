@@ -149,7 +149,7 @@ p{
     position: fixed; /* This is to fix the menu to do not scroll with the page */
     top: -100%; /* starts out of the screen and comes from the top like "hidding" */
     right: 0; /* to maintain it on the right side because the icon is there */
-    width: 30%; /* the size of the box */
+    width: 25%; /* the size of the box */
     height: auto; /* Adjust automatically based on the text inside */
     background-color: var(--brown);
     padding: 2rem 1.5rem;
@@ -184,4 +184,8 @@ p{
     display: flex;
     justify-content: flex-end;
     cursor: pointer; /* I noticed that just the X wasn't showing the little hand to indicate that's clicable, so I did the same thing that I did for the hamburguer */
+}
+
+header {
+    border-bottom: 3px solid var(--beige); /* I have a line to divide the sections but this line belongs to the header because for me in the designer means finished the header to start the body of the website */
 }
