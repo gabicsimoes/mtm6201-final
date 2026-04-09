@@ -385,3 +385,100 @@ There's no about page, but I did this box in the home pretending, like, if I hav
     background-color: var(--beige);
     color: var(--brown);
 }
+
+/* FOOTER */
+/* The line to divide the sections */
+.footer-divider{
+    border-bottom: 3px solid var(--beige); /* The same I did in the header because it's the same line */
+    margin-bottom: 1.5rem; /* To create some space between the line and the content in the footer */
+}
+
+/* LEFT SIDE - FOOTER */
+.footer-logo {
+    width: 150px; /* I tried the sizes manually and what looks similar I keep */
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.footer-menu a {
+    display: block; /* to make one after another */
+    font-size: 16px;
+    color: var(--brown);
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem; /* To align a little bit in the right with the logo image */
+    transition: color 0.3s ease; /* To animate a little bit the hover state when the mouse comes and smoothly transition from brown to green */
+}
+
+.footer-menu a:hover {
+    color: var(--avocado); /* hover green */
+}
+
+/* RIGHT SIDE - FOOTER */
+.footer-follow {
+    color: var(--brown);
+    font-size: var(--fs-body);
+    margin-bottom: 0.5rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 0.2rem; /* The space between the icons*/
+    margin-bottom: 1.5rem;
+}
+
+.social-icon {
+    width: 21px;
+    height: auto;
+    cursor: pointer;
+    transition: opacity 0.3s ease; /* I did this transition when the hover is activated the opacity reduces a little bit */
+}
+
+.social-icon:hover {
+    opacity: 0.7;
+}
+
+.footer-subscribe-title {
+    color: var(--brown);
+    font-size: var(--fs-body);
+    margin-bottom: 0.5rem;
+}
+
+.footer-subscribe-box {
+    background-color: var(--beige);
+    border-radius: 10px;
+    padding: 0.5rem 0.75rem;
+    display: flex; /* To put my input and my arrow button beside each other */
+    align-items: center;
+    gap: 0.5rem;
+    width: fit-content;
+    margin-bottom: 2rem;
+}
+
+.footer-input {
+    border: none;
+    background: transparent; /* To make the box of the input of the email transparent to use just the beige box as the input box */
+    font-size: var(--fs-body);
+    outline: none;
+}
+
+.footer-submit { /* To remove the box around the arrow to keep just the brown arrow as a button to submit the form */
+    background: none; 
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.arrow-icon {
+    width: 20px; 
+    height: auto;
+}
+
+/* Putting them beside each other */
+.footer-content {
+    display: flex; /* To put them in the same row beside each other according left and right side as I did to organize my divs on html */
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 0;
+}
