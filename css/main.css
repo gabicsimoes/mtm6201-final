@@ -660,3 +660,49 @@ I copied the properties from the others buttons here and just changed the class 
     background-color: var(--beige);
     color: var(--brown);
 }
+
+/**************************
+   CATERING & EVENTS PAGE
+***************************/
+/* HERO SECTION - Beige Background and Titles and descriptive text */
+.catering-hero {
+    background-color: var(--beige); /* the beige rectangle behind the text */
+    padding: 3rem 1.5rem; /* the space inside of the beige rectangle */
+}
+
+/* Catering & Events */
+.catering-title {
+    font-size: var(--fs-h1);
+    color: var(--brown);
+    margin-bottom: 1.5rem;
+}
+
+.catering-intro {
+    font-size: var(--fs-body);
+    color: var(--brown);
+    margin-bottom: 2rem;
+}
+
+/* How it works */
+.catering-subtitle {
+    font-size: var(--fs-h2);
+    color: var(--brown);
+    margin-bottom: 1.5rem;
+}
+
+.catering-option {
+    margin-bottom: 1.5rem;
+}
+
+.catering-option-title {
+    font-weight: 700;
+    font-size: var(--fs-body);
+    color: var(--brown);
+    margin-bottom: 0.25rem;
+}
+
+.catering-option-text {
+    font-size: var(--fs-body);
+    color: var(--brown);
+}
+
