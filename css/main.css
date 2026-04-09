@@ -482,3 +482,20 @@ There's no about page, but I did this box in the home pretending, like, if I hav
     gap: 1rem;
     padding: 1rem 0;
 }
+
+/**************
+   MENU PAGE
+***************/
+/* HERO SECTION */
+.menu-hero {
+    padding: 0 1rem; /* some space on the left and right side */
+    margin-top: 1rem; /* space in the top of the image, between the end of the line and the beginning of the image */
+}
+
+.menu-hero-image {
+    width: 100%;
+    height: 437px;/* I found this value on my figma design. At first didn't work because the image was kind of distorted, so I did object-fit to cut the image as need to fit in the size that I wanted to */
+    object-fit: cover;
+    border-radius: 10px; 
+    display: block;
+}
