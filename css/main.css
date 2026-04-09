@@ -278,3 +278,65 @@ header {
 .btn-catering:hover{
     background-color: var(--beige);
 }
+
+/* PAST EVENTS AT PLANT PALETTE */
+.events-section {
+    padding: 1.5rem 1rem; /* This creates space in the top of the section and in the left and right side */
+}
+
+.events-section h2 {
+    margin-bottom: 1rem; /* The space between the h2 and the p after */
+}
+
+.events-text-regular {
+    font-size: var(--fs-body-small); /* This is the size of this exceptional paragraph (12px) */
+    line-height: 1.5; /* I did this to enhance the readibility */
+    margin-bottom: 1rem; /* The space between paragraphs */
+    color: var(--brown); 
+}
+
+.events-text-bold {
+    font-size: var(--fs-body-small); /* This is the size of this exceptional paragraph (12px) */
+    font-weight: 700; /* This part of the paragraph is bold that's why I did 700 */
+    line-height: 1.5;
+    margin-bottom: 1.5rem; /* The space between the end of this paragraph and the picture */
+    color: var(--brown);
+}
+
+/* I know in my prototypes I have an arrow in the both sides to indicate that would be a slide and the arrows supposed to be a button when you clicked slides to the others pictures, I kind knew I can do that with something in Bootstrap but I wasn't safe and also I was afraid to don't finish the whole assignment, so I choose to do the content properly and these details if I have time I'll include, but if I don't, at least I have mostly of my design coded */
+.events-images {
+    display: flex; /* To put the images beside each other */
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.events-images img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* For the buttons I just copy and paste the previous one that I did before to maintain the pattern of them */
+.btn-events {
+    display: inline-block;
+    background-color: var(--avocado);
+    color: var(--brown);
+    padding: 0.75rem 1rem;
+    width: fit-content;
+    border-radius: 50px;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25); /* All of my buttons has a drop shadow with this values on Figma */
+}
+
+.btn-events:hover {
+    background-color: var(--beige);
+    color: var(--brown);
+}
+
+/* I tried to align the button in the center in the .btn-events but didn't work, I tried doing same thing on .events-section but made all the section centered as I imagined, so I choose to create a div on html to envolve just the buttons and align center like I did below */
+.events-btn-wrapper{
+    text-align: center;
+}
