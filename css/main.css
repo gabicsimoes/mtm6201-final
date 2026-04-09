@@ -340,3 +340,48 @@ header {
 .events-btn-wrapper{
     text-align: center;
 }
+
+/* ABOUT BOX
+There's no about page, but I did this box in the home pretending, like, if I have an about page this section is related to it. So I did a box, and inside this box an image telling about the producers, values and misson of the company very briefly and a button to go to the about if I had one */
+.about-section {
+    padding: 1.5rem 1rem;
+}
+
+.about-box {
+    border: 1px solid var(--brown);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.about-text {
+    font-size: var(--fs-body); /* The font that has 16px */
+    color: var(--brown);
+    line-height: 1.5; /* All these values I tried to keep the same. I don't remember what exactly I used on Figma, but here I'm just trying and which fits better I keep */
+    margin-bottom: 1.5rem;
+}
+
+.btn-about { /* The button I just copy and paste what I did before because they all the same */
+    display: inline-block; /* Tells the button to behave as an inline element, just use the space that they need to, without strethcing */
+    background-color: var(--avocado);
+    color: var(--brown);
+    padding: 0.75rem 1rem;
+    width: fit-content; /* I did this to maintain the button in the size of the text (content) inside. To fit the size based on the content */
+    border-radius: 50px;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25); /* All of my buttons has a drop shadow with this values on Figma */
+}
+
+.btn-about:hover {
+    background-color: var(--beige);
+    color: var(--brown);
+}
