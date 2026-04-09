@@ -15,6 +15,49 @@
     <title>Our Menu Page</title>
 </head>
 <body>
+    <!-- HEADER
+     LOGO + HAMBURGUER + LINE SECTION DIVIDER 
+     -->
+    <!-- Organazing the Header Menu for Mobile First wich is a Hamburguer Menu Icon to open the dropdown to the menu for mvoile, the icon I did on Figma as SVG as well the x-button to close the hambuguer -->
+    <header class="site-header"> <!-- This is the class for the whole header -->
+        <!-- For this section and probably for the footer I just copied and pasted from my index.html because the header and the footer are the same in all pages. As I said, I copied and pasted from my index.html so the code for this section is the same and the comments as well. The new comments is gonna appear at some point while I'm developing the body of the site -->
+
+        <!-- DROPDOWN MENU - HAMBURGUER AND X -->
+         <input type="checkbox" id="dropdown-box" class="dropdown-checkbox">
+
+        <!-- Div for the top of the header of the page, when it is logo and the hamburguer icon -->
+        <div class="header-top">
+            <!-- LOGO -->
+             <a href="index.html" class="logo">
+                <img src="assets/images/logo-plantpalette.png" alt="Plant Palette Green Logo">
+             </a>
+
+            <!-- Hamburguer ICON - for the mobile's menu -->
+              <label for="dropdown-box" class="dropdown-open">
+                <img src="assets/icons/hamburguer-menu-icon.svg" alt="Hamburguer Icon to open the mobile's menu">
+              </label>
+        </div>
+
+            <!-- MENU MOBILE -->
+             <nav class="mobile-nav">
+                <!-- X ICON to close the dropdown that I opened using the hamburguer -->
+                 <label for="dropdown-box" class="dropdown-close">
+                    <img src="assets/icons/x-button.svg" alt="X Button to close the dropdown menu">
+                 </label>
+
+                 <!-- List for the Navigation Menu properly -->
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="catering-events.html">Catering & Events</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <!-- Pages that I put # it is pages that I have in the Menu but they're not designed. The other ones, I linked to their own page. -->
+                  </ul>
+             </nav>
+    </header>
+
+
     
 </body>
 </html>
