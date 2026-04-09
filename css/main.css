@@ -499,3 +499,60 @@ There's no about page, but I did this box in the home pretending, like, if I hav
     border-radius: 10px; 
     display: block;
 }
+
+/* MENU SECTION
+TITLE AND SUBTITLE 
+ICONS */
+.menu-section {
+    padding: 0 1rem; /* spaces on the left and right */
+    margin-top: 1.5rem;
+}
+
+.menu-subtitle {
+    text-align: center;
+    font-size: var(--fs-h2);
+    color: var(--brown);
+    margin-bottom: 1rem;
+}
+
+.menu-title {
+    font-size: var(--fs-h1); 
+    color: var(--brown);
+    margin-bottom: 1rem;
+    text-align: left; /* It was already aligned to the left but I prefer to put just to be safe, something could happens in coding and scares me so I prefer to be safe than sorry */
+}
+
+/* ICONS ROW PART */
+.menu-icons-row {
+    display: flex;
+    flex-direction: column; /* to put the icons in like two of them in one line, and the other two below */
+    gap: 0.5rem;
+}
+
+.menu-icons-line {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem; /* space between the lines of the icons */
+}
+
+.menu-icon-item,
+.menu-icon-item2 {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.menu-icon-item img {
+    width: 30px;   /* I choose the value based on what looks similar to me */
+    height: auto;
+}
+
+.menu-icon-item2 img { /* Also I created a different class for the group of gf and nf because on my Figma this ones are smaller than the others, so they're not the same size, so to adjust this manually I prefered to separate them in different classes */
+    width: 39px;   /* I choose the value based on what looks similar to me. */
+    height: auto;
+}
+
+.menu-icon-label {
+    font-size: var(--fs-body);
+    color: var(--brown);
+}
