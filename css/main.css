@@ -706,3 +706,33 @@ I copied the properties from the others buttons here and just changed the class 
     color: var(--brown);
 }
 
+/* EVENT GALLERY SECTION */
+.event-gallery {
+    padding: 1.5rem 1rem; /* To give some space for the image on the left and right */
+}
+
+.event-gallery-image {
+    width: 100%;
+    border-radius: 10px; /* The corner radius I'm using the values that I have on Figma */
+    display: block;
+    margin-bottom: 1rem; /* The space between the end of the image and the button */
+}
+
+.event-gallery-btn { /* The button I just copy and paste what I did before because they all the same */
+    display: block;
+    width: fit-content; /* because the button is fitting with the content, it doesn't expand in the whole line, so helps the margin-left: auto works */
+    margin-left: auto; /* This is what makes the button goes to align to the right side of the image because, it is a block (display:block), so margin left push the button to the spare space */
+    background-color: var(--avocado);
+    color: var(--brown);
+    padding: 0.75rem 1rem;
+    border-radius: 50px;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+}
+
+.event-gallery-btn:hover {
+    background-color: var(--beige);
+    color: var(--brown);
+}
