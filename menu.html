@@ -63,7 +63,7 @@
      </section>
 
      <!-- MENU SECTION - TITLES -->
-      <section class="menu-section">
+      <section class="menu-section" id="menu-top">
         <!-- The first h2 center in the page "bowls" -->
          <h2 class="menu-subtitle">BOWLS</h2>
          <h1 class="menu-title">BOWLS</h1>
@@ -99,5 +99,172 @@
             </div>
           </div>
       </section>
+
+      <!-- MENU CARDS -->
+       <section class="menu-cards">
+       <!-- CARD 1 -->
+       <div class="menu-card">
+        <!-- IMAGE + ICONS 
+        Because inside of the picture there's the dietary icons in the top right of the image -->
+        <div class="menu-card-image-wrapper">
+        <img src="assets/images/meal1.png" alt="Protein Garden Bowl" class="menu-card-image">
+
+        <div class="menu-card-icons">
+            <img src="assets/icons/gf-icon.svg" alt="Gluten-free icon">
+            <img src="assets/icons/nf-icon.svg" alt="Nut-free icon">
+        </div>
+        </div>
+
+        <!-- TEXT FOR DESCRIPTION OF THE MEALS -->
+         <div class="menu-card-content">
+        <h1 class="menu-card-title">Protein Garden Bowl</h1> <!-- I did h4 previously because it's the size that I set on CSS, but after validator they found this as an error so I changed to h1 considering this is the title of the meal -->
+
+        <p class="menu-card-description">
+            A balanced bowl with grilled tofu, seasonal greens, edamame, corn, cucumber, cherry tomatoes, purple cabbage and soft-boiled eggs, finished with fresh scallions.
+        </p>
+
+        <div class="menu-card-info">
+            <p class="menu-card-calories">520 kcal</p>
+            <p class="menu-card-price">$ 14.90</p>
+        </div>
+        </div>
+       </div>      
+
+       <!-- CARD 2 
+        For the next cards I just copied and past the code for the 1st one and changed the informations according to the acurate ones -->
+       <div class="menu-card">
+        <!-- IMAGE + ICONS 
+        Because inside of the picture there's the dietary icons in the top right of the image -->
+        <div class="menu-card-image-wrapper">
+        <img src="assets/images/meal2.png" alt="Sweet Harmony Bowl" class="menu-card-image">
+
+        <div class="menu-card-icons">
+            <img src="assets/icons/vegan-icon.svg" alt="Vegan Icon">
+            <img src="assets/icons/gf-icon.svg" alt="Gluten-free icon">
+            <img src="assets/icons/nf-icon.svg" alt="Nut-free icon">
+        </div>
+        </div>
+
+        <!-- TEXT FOR DESCRIPTION OF THE MEALS -->
+         <div class="menu-card-content">
+        <h1 class="menu-card-title">Sweet Harmony Bowl</h1>
+
+        <p class="menu-card-description">
+            A vibrant bowl with roasted sweet potatoes, tofu, shredded carrots, pomegranate seeds and scallions, served with a creamy house dressing.
+        </p>
+
+        <div class="menu-card-info">
+            <p class="menu-card-calories">480 kcal</p>
+            <p class="menu-card-price">$ 13.90</p>
+        </div>
+        </div>
+       </div>
+       
+       <!-- CARD 3 -->
+       <div class="menu-card">
+        <!-- IMAGE + ICONS 
+        Because inside of the picture there's the dietary icons in the top right of the image -->
+        <div class="menu-card-image-wrapper">
+        <img src="assets/images/meal3.png" alt="Mushroom Comfort Bowl" class="menu-card-image">
+
+        <div class="menu-card-icons">
+            <img src="assets/icons/gf-icon.svg" alt="Gluten-free icon"> <!-- I don't know what happened with this specific icon here, because in the 2nd card it's fine but in the 1st and 3rd is weird. It was normal in the beginning. I tried to copy and paste again from the sections that are working but nothing happens. -->
+            <img src="assets/icons/nf-icon.svg" alt="Nut-free icon">
+        </div>
+        </div>
+
+        <!-- TEXT FOR DESCRIPTION OF THE MEALS -->
+         <div class="menu-card-content">
+        <h1 class="menu-card-title">Mushroom Comfort Bowl</h1>
+
+        <p class="menu-card-description">
+            A warm and creamy mushroom bowl made with blended mushrooms and topped with sautéed slices and fresh cilantro leaves.
+        </p>
+
+        <div class="menu-card-info">
+            <p class="menu-card-calories">390 kcal</p>
+            <p class="menu-card-price">$ 11.90</p>
+        </div>
+        </div>
+       </div>
+
+       <!-- CARD 4 -->
+       <div class="menu-card">
+        <!-- IMAGE + ICONS 
+        Because inside of the picture there's the dietary icons in the top right of the image -->
+        <div class="menu-card-image-wrapper">
+        <img src="assets/images/meal4.png" alt="Rainbow Crunch Bowl" class="menu-card-image">
+
+        <div class="menu-card-icons">
+            <img src="assets/icons/vegan-icon.svg" alt="Vegan Icon">
+            <img src="assets/icons/gf-icon.svg" alt="Gluten-free icon">
+            <img src="assets/icons/nf-icon.svg" alt="Nut-free icon">
+        </div>
+        </div>
+
+        <!-- TEXT FOR DESCRIPTION OF THE MEALS -->
+         <div class="menu-card-content">
+        <h1 class="menu-card-title">Rainbow Crunch Bowl</h1>
+
+        <p class="menu-card-description">
+            A fresh and colourful bowl with zucchini ribbons, purple cabbage, carrots, leafy greens, cauliflower florests and beet cubes, finished with black sesame seeds.
+        </p>
+
+        <div class="menu-card-info">
+            <p class="menu-card-calories">310 kcal</p>
+            <p class="menu-card-price">$ 12.90</p>
+        </div>
+        </div>
+       </div>
+       </section>
+       <a href="#menu-top" class="menu-back-btn">BACK</a>
+
+       <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-divider"></div> <!-- The line that I created to divide the sections -->
+
+            <div class="footer-content">
+                <!-- LEFT SIDE - FOOTER -->
+                <div class="footer-left">
+                <!-- Things that goes to the left size of the footer -->
+                <a href="index.html">
+                <img src="assets/images/logo-plantpalette.png" alt="Plant Palette Green Logo" class="footer-logo">
+                </a> <!-- I did this anchor tag envolving the image to linked the home page to the logo, so when you click in the logo goes to the home page -->
+
+                <nav class="footer-menu">
+                    <!-- I don't have home on my Figma because the home is when you click in the logo -->
+                    <a href="#">about</a>
+                    <a href="menu.html">our menu</a>
+                    <a href="catering-events.html">catering & events</a>
+                    <a href="#">contact</a>
+                    <!-- Pages that I put # it is pages that I have in the Menu but they're not designed. The other ones, I linked to their own page. -->
+                </nav>
+                </div>
+
+                <!-- RIGHT SIDE - FOOTER -->
+                <div class="footer-right">
+                    <p class="footer-follow">Follow us:</p>
+
+                <div class="footer-social">
+                    <!-- Instagram Icon and Link -->
+                    <a href="https://www.instagram.com/" target="_blank"></a>
+                    <img src="assets/icons/instagram-icon.png" alt="Instagram brown icon" class="social-icon">
+                    <!-- Facebook Icon and Link -->
+                    <a href="https://www.facebook.com/" target="_blank"></a>
+                    <img src="assets/icons/facebook-icon.png" alt="Facebook brown icon" class="social-icon">
+                </div>
+
+                <!-- Subscribe bar -->
+                 <p class="footer-subscribe-title">Subscribe to our blog!</p>
+                 <div class="footer-subscribe-box">
+                    <input type="email" placeholder="your email" class="footer-input">
+                    <button class="footer-submit">
+                        <img src="assets/icons/arrow-btn.png" alt="Brown arrow to submit" class="arrow-icon">
+                    </button>
+                 </div>
+                 <p class="footer-copy">© Plant Palette.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

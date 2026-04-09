@@ -556,3 +556,107 @@ ICONS */
     font-size: var(--fs-body);
     color: var(--brown);
 }
+
+/* MENU CARDS */
+/* CARD 1 */
+
+/* BOX OF THE CARD */
+.menu-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    gap: 0.75rem;
+    box-shadow: 2px 2px 2px 4px rgba(242, 211, 181, 0.4); /* light beige based on the figma design. I was increasing/decreasing the px based on what looked similar to me and makes the box more noticeable */
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem; /* Sometimes my padding works for space on the left and right, but sometimes don't, also I never remember which value is what, I do them by trying and see what happens but it's hard to me to memorize so for this case I choose to put margin-left/right/top/bottom because it's more clear to me */
+}
+
+.menu-card-image-wrapper {
+    position: relative;
+}
+
+.menu-card-image {
+    width: 150px; /* I adjust according I thought was similar, trying different values until I found one that I liked */
+    height: 150px; /* same here but in my wireframes the images are more rectangle than square, but I couldn't figure it out so I did as a square because fits better to the box */
+    object-fit: cover;
+    border-radius: 10px; /* Based on my figma design */
+}
+
+.menu-card-icons {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    display: flex;
+    gap: 0.2px; /* The space between the icons */
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25)); /* To create the drop-shadow around the icons */
+}
+
+.menu-card-icons img {
+    width: 20px; /* The size of my icons were based on what I tought was similar to the wireframe */
+    height: auto;
+}
+
+.menu-card-content {
+    flex: 1; /* To fit the content in the spare space, like the image is in one side, and there's a space that need to occupy so that's what this does */
+    display: flex;
+    flex-direction: column; /* to adjust the content in two columns, when the text is in a vertical column in the right side of the box */
+    justify-content: space-evenly; /* distributes the space equally, I think I used this on my figma that's why I did here */
+}
+
+.menu-card-title {
+    font-size: var(--fs-h4);
+    color: var(--brown);
+}
+
+.menu-card-description {
+    font-size: var(--fs-body); /* In my wireframes the font for the <p> is 12px but here it's too small so I kept that in 16px because looks better to me*/
+    color: var(--brown);
+    margin-top: 0.25rem;
+}
+
+.menu-card-info {
+    display: flex; /* To put the calories and price in the same line */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-card-calories {
+    font-size: var(--fs-body);
+    color: var(--brown);
+}
+
+.menu-card-price {
+    font-size: var(--fs-body);
+    font-weight: 700;
+    color: var(--pumpkin);
+}
+
+/* Vegan Icon for the Card2 because the size of the vegan icon is different than the others I don't know why */
+.menu-card-icons img:first-child{
+    width: 16px;
+    height: auto;
+}
+
+/* BUTTON BACK
+I copied the properties from the others buttons here and just changed the class to apply the tags properly */
+.menu-back-btn { /* The button I just copy and paste what I did before because they all the same */
+    display: block; /* Fot the other buttons was inline-block but for this I did block because I wanted to align center using margin: auto to put the button in the center of the page */
+    margin: 1rem auto;
+    background-color: var(--avocado);
+    color: var(--brown);
+    padding: 0.75rem 2.5rem; /* I changed the padding to increase the size in the x axis for the button to look like more to the button in the wireframe */
+    width: fit-content; /* I did this to maintain the button in the size of the text (content) inside. To fit the size based on the content */
+    border-radius: 50px;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25); /* All of my buttons has a drop shadow with this values on Figma */
+}
+
+.menu-back-btn:hover{
+    background-color: var(--beige);
+    color: var(--brown);
+}
