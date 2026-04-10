@@ -856,3 +856,63 @@ I copied the properties from the others buttons here and just changed the class 
     background-color: var(--beige);
     color: var(--brown);
 }
+
+/* 4TH SECTION - GATHER, CELEBRATE, ENJOY! */
+.gather-section {
+    padding: 1.5rem 1.5rem;
+}
+
+.gather-image-wrapper {
+    position: relative; /* allows overlay and the text comes on top of the image */
+}
+
+.gather-image {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.gather-overlay {
+    position: absolute;
+    inset: 0; /* this means top, bottom, left, right = 0 */
+    background-color: rgba(0, 0, 0, 0.25); /* The black overlay with 25% of opacity */
+    border-radius: 10px;
+}
+
+.gather-content {
+    position: absolute;
+    inset: 0;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.gather-title {
+    font-size: var(--fs-h3);
+    color: var(--beige);
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); /* To put the drop shadow as I have on Figma, my values are Y = 2, Blur = 5 and Black opacity in 25% */
+}
+
+.gather-text {
+    font-size: var(--fs-body);
+    color: var(--beige);
+    margin-bottom: 8rem; /* to adjust the space between the end of the paragraph to the begining of the cta */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); /* To put the drop shadow as I have on Figma, my values are Y = 2, Blur = 5 and Black opacity in 25% */
+}
+
+.gather-cta {
+    font-family: var(--font-body);
+    font-weight: bold;
+    color: var(--beige);
+    align-self: flex-end; /* pushes the text to the right side */
+    display: flex;
+    align-items: center;
+    gap: 0.25rem; /* space between text and arrow */
+}
+
+.gather-arrow {
+    width: 1rem;
+    height: auto;
+    display: inline-block;
+}
