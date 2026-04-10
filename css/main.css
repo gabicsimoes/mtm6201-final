@@ -748,6 +748,10 @@ I copied the properties from the others buttons here and just changed the class 
     /* I realized that I have a problem with things that uses grid loll, because in the midterm I remeber that was a section like this and I couldn't figure it out, and now the same, I noticed the background is not embracing the content inside. I tried height, padding, align stretch but none worked, so I left like this :( */
 }
 
+.event-testimonials-content{
+    background-color: var(--beige); /* I saw your comment in my midterm saying that I have to put things in a div to menage the content inside a grid. I don't know if I did right but I had this div just for the content, so I choose to put the same backgroud colour as I have above, and kind worked. As I said, I don't know if its correct but since I achieved the expected layout I'm happy ;p */
+}
+
 .event-testimonials-image {
     /* The size of the image it was to narrow so instead of put width:100% I did the same size that I had on Figma */
     width: 217px;
