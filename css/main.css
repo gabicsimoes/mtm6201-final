@@ -714,7 +714,6 @@ I copied the properties from the others buttons here and just changed the class 
 .event-gallery-image {
     width: 100%;
     border-radius: 10px; /* The corner radius I'm using the values that I have on Figma */
-    display: block;
     margin-bottom: 1rem; /* The space between the end of the image and the button */
 }
 
@@ -1047,5 +1046,39 @@ I copied the properties from the others buttons here and just changed the class 
         margin-top: 1rem;
         line-height: 1.2;
         font-size: var(--fs-body-small);
+    }
+
+    /****************************
+          CATERING & EVENTS PAGE
+    *****************************/
+    .catering-title{
+        font-size: var(--fs-h1); /* I think this way that I use to adjust the sizes or margin before is kind amateur but that's how I feel in Web Design honestly, so I prefer to follow in a way thats is easier to my understanding process than trying to challenging myself doing things in a risky way, and also I don't think this a moment to take risk */
+    }
+
+    .event-testimonials-image{
+        width: 100%; /* increasing the size of the image in testimonials to make more similar to the Figma Design */
+    }
+
+    .event-planning-text{
+        margin-bottom: 4rem; /* adjusting the space after this paragraph to push the buttons a little bit down */
+    }
+
+    /* Adjusting the size of the image and the sizes of the fonts and the space between these elements */
+    .gather-image{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .gather-title{
+        font-size: var(--fs-h1);
+    }
+
+    .gather-text{
+        margin-bottom: 8rem;
+    }
+
+    .gather-cta{
+        font-size: var(--fs-body);
     }
 }
