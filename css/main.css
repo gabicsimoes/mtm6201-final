@@ -933,6 +933,9 @@ I copied the properties from the others buttons here and just changed the class 
         --fs-body-small: 0.8rem;
     }
 
+    /********************
+          HOME PAGE
+    *********************/
     .hero img {
         height: 320px; /* reducing the size of the image */
     }
@@ -958,4 +961,39 @@ I copied the properties from the others buttons here and just changed the class 
     white-space: nowrap; /* To maintain the paragraph in the same line */
     margin-bottom: 2.5rem; /* space between end of paragraph to the buttons */
 }
+
+/* 2nd section: 2 columns */
+/* 1st column - events */
+    .events-about-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .events-section { /* This means like pick all of the direct child and put in the 1st column of the grid, so all of the elements inside of .events-section will occupy the 1st column */
+        grid-column: 1;
+    }
+
+    /* Adjusting the images to stay beside each other */
+    .events-images {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .events-images img {
+        width: 50%;
+        aspect-ratio: 1; /* make the images as a square size */
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .events-btn-wrapper {
+        text-align: center; /* align the button in the middle of the two images */
+    }
+
+    /* 2nd column - about section */
+    .about-section {
+        grid-column: 2;
+        align-self: start;
+    }
 }
