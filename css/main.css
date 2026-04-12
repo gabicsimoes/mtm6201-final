@@ -916,3 +916,46 @@ I copied the properties from the others buttons here and just changed the class 
     height: auto;
     display: inline-block;
 }
+
+/****************
+ MEDIA QUERIES
+*****************/
+/* TABLET */
+@media (min-width: 768px) {
+
+    /* Adjusting the sizes of the fonts */
+    :root {
+        --fs-h1: 1.5rem;
+        --fs-h2: 1.2rem;
+        --fs-h3: 1rem;
+        --fs-h4: 0.8rem;
+        --fs-body: 1.125rem;
+        --fs-body-small: 0.8rem;
+    }
+
+    .hero img {
+        height: 320px; /* reducing the size of the image */
+    }
+
+    .hero-buttons {
+        flex-direction: row; /* Buttons in the same row, one beside the other*/
+        gap: 1.5rem;
+    }
+
+    .btn-menu,
+    .btn-catering { /* adjusting the buttons to fit the content to don't fill the whole width */
+        width: auto;
+        padding: 0.75rem 1.5rem;
+        font-size: var(--fs-button);
+    }
+
+    .hero-content h1 {
+    white-space: nowrap; /* To the h1 don't broke in more than one line */
+    margin-top: 4rem;
+}
+
+    .hero-content p {
+    white-space: nowrap; /* To maintain the paragraph in the same line */
+    margin-bottom: 2.5rem; /* space between end of paragraph to the buttons */
+}
+}
