@@ -996,4 +996,14 @@ I copied the properties from the others buttons here and just changed the class 
         grid-column: 2;
         align-self: start;
     }
+
+    /********************
+          MENU PAGE
+    *********************/
+    /* Adjusting icons in the same line */
+    .menu-icons-row {
+        display: flex;
+        flex-direction: row; /* to put them in a row */
+        gap: 1.5rem; /* space between each icon and their labels */
+    }
 }
