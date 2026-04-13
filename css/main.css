@@ -1099,12 +1099,12 @@ I copied the properties from the others buttons here and just changed the class 
     }
 
     .events-about-wrapper {
-        /* I did grid to make sure they'll be in two columns identically, where 1st is events on the left, and about on the right */
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 3rem; /* space between the 2 columns */
-        padding: 1.5rem 1rem; /* the space around the section (left, right, top, bottom */
-        align-items: start; /* to put columns to start in the begnning of the sections */
+    /* I did grid to make sure they'll be in two columns identically, where 1st is events on the left, and about on the right */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem; /* space between the 2 columns */
+    padding: 1.5rem 1rem; /* the space around the section (left, right, top, bottom */
+    align-items: start; /* to put columns to start in the begnning of the sections */
     }
 
     .events-section { /* This organizes the section in 2 equal columns to text goes to the left and images to the right */
@@ -1128,7 +1128,7 @@ I copied the properties from the others buttons here and just changed the class 
     }
 
     .events-images img { /* I did the height manually according to what I have on Figma */
-    width: 100%; /* I tried the width same as my Figma but it was a lot of empty space between sections so I preferred to put 100% to fill the empty space and make things looks nicer even it's not exactly same as my Figma prototypes, because I just realizing doing this assignment that are 2 options: either I don't have the enough knowledge to make things exactly the same or the way that I did on Figma it's not what happens in the reality of the industry - at least was my first time in a foundation class, so I'm in the learning process still */
+    width: 100%; /* I tried the width same as my Figma but it was a lot of empty space between sections so I preferred to put 100% to fill the empty space and make things looks nicer even it's not exactly same as my Figma prototypes, because I just realized doing this assignment that are 2 options: either I don't have the enough knowledge to make things exactly the same or the way that I did on Figma it's not what happens in the reality of the industry - at least was my first time in a foundation class, so I'm in the learning process still */
     height: 188px; 
     object-fit: cover;
     border-radius: 10px;
@@ -1175,7 +1175,7 @@ I copied the properties from the others buttons here and just changed the class 
 }
 
     .menu-card:nth-child(3) { /* On tablet I hidden the 3rd card, so now I have to turn it back that's why I did flex because it was the display that I used before, my .menu-cards are flex above */
-        display: flex;
+    display: flex;
 }
 
     .menu-card:nth-child(4) { /* To keep the 4th invisible */
@@ -1186,5 +1186,24 @@ I copied the properties from the others buttons here and just changed the class 
     max-width: 1200px; /* To make the title start together to the cards */
     margin: 0 auto; /* To put the title and icons strating same as the cards */
     margin-top: 2rem; /* I did this to create some space for the smal "BOWL" word that I have after the hero image, because without this it was too together */
+}
+
+/**************************
+    CATERING & EVETS PAGE
+***************************/
+.catering-title{
+    font-size: 48px; /* I did manually to put the same size that I have on Figma because at this point rem's became so confusing to me */
+}
+
+.catering-intro{
+    font-size: 22px;
+}
+
+.catering-subtitle{
+    font-size: 32px;
+}
+
+.catering-option{
+    font-size: 22px;
 }
 }
