@@ -1081,4 +1081,19 @@ I copied the properties from the others buttons here and just changed the class 
     .gather-cta{
         font-size: var(--fs-body);
     }
+
+/* DESKTOP */
+/* My tablet and desktop are kind similar to each other so the changes will be a little subtle, just some font-sizes, maybe margins, and some grid or flex to adjus the layout. But I don't would be a lot */
+@media (min-width: 1024px) {
+    /********************
+          HOME PAGE
+    *********************/
+    /* Adjusting manually the font sizes according what I have on Figma for Desktop */
+    .hero-content h1 {
+    font-size: 36px;
+}
+
+    .hero-content p {
+    font-size: 22px;
+}
 }
