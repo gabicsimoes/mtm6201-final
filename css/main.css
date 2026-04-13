@@ -1057,11 +1057,35 @@ I copied the properties from the others buttons here and just changed the class 
 
     .event-testimonials-image{
         width: 100%; /* increasing the size of the image in testimonials to make more similar to the Figma Design */
+        height: 570px; /* same as my Figma */
+        object-fit: cover;
+        border-radius: 10px;
     }
 
     .event-planning-text{
         margin-bottom: 4rem; /* adjusting the space after this paragraph to push the buttons a little bit down */
     }
+
+
+    .event-testimonials {
+        height: 570px; /* same height of the image */
+    }
+
+    /* From here there were things that I figure it out on Desktop Media Query, so I just copied and pasted what it works better from there to here
+    Starting here */
+    .event-planning-btn1,
+    .event-planning-btn2 {
+    padding: 0.75rem 1rem; /* the size of the button */
+    line-height: 1; /* remove the extra space in the button */
+    white-space: nowrap; /* disable the broken line */
+    font-size: 16px;
+    }   
+
+    .event-testimonials-content{
+        background-color: transparent;
+    }
+    /* And finishing here
+    Which was basically the size of the beige box, the extra background-colour in the content (you're gonna see a massive explanation on Desktop Media Query in this part (becuse I did this on Desktop first) I "removed", I fixed some buttons weird layout and the size of the image according to the exact valu on Figma and I think it was it */
 
     /* Adjusting the size of the image and the sizes of the fonts and the space between these elements */
     .gather-image{
