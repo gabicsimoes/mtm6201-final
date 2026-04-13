@@ -896,7 +896,7 @@ I copied the properties from the others buttons here and just changed the class 
 .gather-text {
     font-size: var(--fs-body);
     color: var(--beige);
-    margin-bottom: 8rem; /* to adjust the space between the end of the paragraph to the begining of the cta */
+    margin-bottom: 7rem; /* to adjust the space between the end of the paragraph to the begining of the cta */
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); /* To put the drop shadow as I have on Figma, my values are Y = 2, Blur = 5 and Black opacity in 25% */
 }
 
@@ -1206,4 +1206,72 @@ I copied the properties from the others buttons here and just changed the class 
 .catering-option{
     font-size: 22px;
 }
+
+.event-gallery {
+    max-width: 1382px; /* I just found this value in the Dev Mode on Figma by selecting my image */
+    margin: 0 auto; /* to center the image in the page */
+}
+
+.event-gallery-image {
+    width: 100%; /* to fill the container */
+    height: 490px; /* same as my Figma */
+    object-fit: cover; /* to crop in a tidy way */
+    border-radius: 10px; /* same as the conerner radius that I have in almost everything on my design */
+}
+
+.event-testimonials-content {
+    max-width: 570px; /* I just did the same value that I have for the image */
+    margin-left: auto; /* push far from the image */
+    margin-right: auto; /* maintain center */
+    padding: 3rem 0; /* some space which increase the size of the fonts aperently make things looks a little bit proporcional */
+    text-align: left; /* align to the left */
+    display: flex;
+    flex-direction: column;
+}
+
+.event-testimonials-title{
+    font-size: 32px;
+}
+
+.event-testimonials-text{
+    font-size: 16px;
+}
+
+.event-planning-title{
+    font-size: 22px;
+}
+
+.event-planning-text{
+    font-size: 16px;
+}
+
+.event-planning-btn1,
+.event-planning-btn2 {
+    padding: 0.75rem 1rem; /* the size of the button */
+    line-height: 1; /* remove the extra space in the button */
+    white-space: nowrap; /* disable the broken line */
+    font-size: 16px;
+}
+
+.event-testimonials-image {
+    width: 100%;
+    height: 570px; /* same as my Figma */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.event-testimonials {
+    height: 570px; /* same height of the image */
+}
+
+.event-testimonials-content {
+    background-color: transparent;
+    /* - Text written in Portuguese and translated using Google Translate because it was a very specific line of reasoning that's too much for my level of English hahaha -
+    What happened here was the following:
+    I needed to do this on Mobile (.event-testimonials-content background-color: var(--beige);) because for some reason I don't know, my beige box wasn't ending where the text ended; the text kept going outside the beige box. So I had the idea to also put a beige box behind the text, even knowing that one box would overlap the other. It was the way I found to solve it, and since I did this a few days ago, I don't remember the reasoning exactly anymore, because there comes a point where I start trial and error, testing, and seeing what works. So, when I got to the Desktop Media Query part, there was a leftover bit of that beige as the background color of the content. So for the desktop, I tried a few things before adding a transparent background (which is what solved the problem), like making the background white, or setting its height to the same as the image (570px), but the only thing that worked was the transparent background, thank goodness lol. That's why I made that choice, just explaining my thought process. I hope it makes sense :) */
+}
+
+.gather-text{
+        margin-bottom: 10rem; /* adjusting manually the location of "make your reservation */
+    }
 }
