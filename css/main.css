@@ -1081,6 +1081,7 @@ I copied the properties from the others buttons here and just changed the class 
     .gather-cta{
         font-size: var(--fs-body);
     }
+}
 
 /* DESKTOP */
 /* My tablet and desktop are kind similar to each other so the changes will be a little subtle, just some font-sizes, maybe margins, and some grid or flex to adjus the layout. But I don't would be a lot */
