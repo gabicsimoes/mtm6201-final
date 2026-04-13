@@ -1161,4 +1161,30 @@ I copied the properties from the others buttons here and just changed the class 
     line-height: 1.5;
     margin-bottom: 1.5rem;
     }
+
+    /********************
+          MENU PAGE
+    *********************/
+    .menu-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 euqal columns */
+    gap: 2rem; /* the space between the cards */
+    max-width: 1200px; /* largura máxima para não ficar esticado demais */
+    margin: 0 auto; /* centraliza o grid na página */
+    padding: 1.5rem 1rem; /* respiro lateral */
+}
+
+    .menu-card:nth-child(3) { /* On tablet I hidden the 3rd card, so now I have to turn it back that's why I did flex because it was the display that I used before, my .menu-cards are flex above */
+        display: flex;
+}
+
+    .menu-card:nth-child(4) { /* To keep the 4th invisible */
+    display: none;
+}
+
+    .menu-section {
+    max-width: 1200px; /* To make the title start together to the cards */
+    margin: 0 auto; /* To put the title and icons strating same as the cards */
+    margin-top: 2rem; /* I did this to create some space for the smal "BOWL" word that I have after the hero image, because without this it was too together */
+}
 }
