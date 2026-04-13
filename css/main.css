@@ -1090,10 +1090,74 @@ I copied the properties from the others buttons here and just changed the class 
     *********************/
     /* Adjusting manually the font sizes according what I have on Figma for Desktop */
     .hero-content h1 {
-    font-size: 36px;
-}
+    font-size: 36px; /* I'm using px right now because I was so confusing with rem and I was barely seeing the difference properly. For tablet it was okay, but for desktop I was afradi to stay out of proporcional */
+    }
 
     .hero-content p {
     font-size: 22px;
-}
+    }
+
+    .events-about-wrapper {
+        /* I did grid to make sure they'll be in two columns identically, where 1st is events on the left, and about on the right */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem; /* space between the 2 columns */
+        padding: 1.5rem 1rem; /* the space around the section (left, right, top, bottom */
+        align-items: start; /* to put columns to start in the begnning of the sections */
+    }
+
+    .events-section { /* This organizes the section in 2 equal columns to text goes to the left and images to the right */
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem; 
+    align-items: start; 
+    }
+
+    .events-text-wrapper { /* I did this wrapper to put all the text in the same "box" to adjusting them properly, baise without this one of the paragraphs were floating in the wrong spot */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    }
+
+    .events-images { /* This puts the images one after another, not beside each other */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0; /* remove o margin-bottom do mobile */
+    }
+
+    .events-images img { /* I did the height manually according to what I have on Figma */
+    width: 100%; /* I tried the width same as my Figma but it was a lot of empty space between sections so I preferred to put 100% to fill the empty space and make things looks nicer even it's not exactly same as my Figma prototypes, because I just realizing doing this assignment that are 2 options: either I don't have the enough knowledge to make things exactly the same or the way that I did on Figma it's not what happens in the reality of the industry - at least was my first time in a foundation class, so I'm in the learning process still */
+    height: 188px; 
+    object-fit: cover;
+    border-radius: 10px;
+    }
+
+    .events-btn-wrapper {
+    text-align: left;
+    margin-top: 1rem;
+    }
+
+    .about-box { /* This is to create 2 columns on my box, to put the image in one side and the text in the other */
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem; 
+    padding: 1.5rem; 
+    border-radius: 10px; 
+    }
+
+    .about-image {
+    /* The sizes was based on my Figma design */
+    width: 362px;
+    height: 396px; 
+    object-fit: cover; /* maintain the crop based on the sizes that I chose */
+    border-radius: 10px;
+    margin: 0; /* remove o margin-bottom do mobile */
+    }
+
+    .about-text {
+    font-size: 16px; 
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    }
 }
