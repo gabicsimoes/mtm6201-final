@@ -15,11 +15,14 @@
     <title>Our Menu Page</title>
 </head>
 <body>
+    <!-- Adding Skip Links -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#site-navigation" class="skip-link">Skip to navigation</a>
     <!-- HEADER
      LOGO + HAMBURGUER + LINE SECTION DIVIDER 
      -->
     <!-- Organazing the Header Menu for Mobile First wich is a Hamburguer Menu Icon to open the dropdown to the menu for mvoile, the icon I did on Figma as SVG as well the x-button to close the hambuguer -->
-    <header class="site-header"> <!-- This is the class for the whole header -->
+    <header class="site-header" role="banner"> <!-- This is the class for the whole header -->
         <!-- For this section and probably for the footer I just copied and pasted from my index.html because the header and the footer are the same in all pages. As I said, I copied and pasted from my index.html so the code for this section is the same and the comments as well. The new comments is gonna appear at some point while I'm developing the body of the site -->
 
         <!-- DROPDOWN MENU - HAMBURGUER AND X -->
@@ -39,7 +42,7 @@
         </div>
 
             <!-- MENU MOBILE -->
-             <nav class="mobile-nav">
+             <nav class="mobile-nav" id="site-navigation" role="navigation">
                 <!-- X ICON to close the dropdown that I opened using the hamburguer -->
                  <label for="dropdown-box" class="dropdown-close">
                     <img src="assets/icons/x-button.svg" alt="X Button to close the dropdown menu">
@@ -57,13 +60,28 @@
              </nav>
     </header>
 
+    <main id="main-content" role="main">
+        <article itemscope itemtype="https://schema.org/Organization">
+            <meta itemprop="name" content="Plant Palette">
+            <meta itemprop="url" content="https://www.plantpalette.com">
+            <meta itemprop="logo" content="assets/images/logo-plantpalette.png">
+            <meta itemprop="sameAs" content="https://www.instagram.com/">
+            <meta itemprop="sameAs" content="https://www.facebook.com/">
+        </article>
+
+        <article itemscope itemtype="https://schema.org/WebPage">
+            <meta itemprop="name" content="Plant Palette Menu">
+            <meta itemprop="description" content="Explore our plant-based bowls, seasonal ingredients, and dietary-friendly options.">
+        </article>
+
     <!-- HERO SECTION - just an image -->
-     <section class="menu-hero">
+     <section class="menu-hero" role="region" aria-label="Menu hero image">
         <img src="assets/images/hero-menu.jpg" alt="A colourful bowl of salad, vegetables and an egg surrounded by juice and some sauce." class="menu-hero-image">
      </section>
 
      <!-- MENU SECTION - TITLES -->
-      <section class="menu-section" id="menu-top">
+      <!-- I did aria-label because the section is not like designed with proper text, so some sections there is a heading but some not -->
+      <section class="menu-section" id="menu-top" role="region" aria-label="Menu categories">
         <!-- The first h2 center in the page "bowls" -->
          <h2 class="menu-subtitle">BOWLS</h2>
          <h1 class="menu-title">BOWLS</h1>
@@ -101,7 +119,7 @@
       </section>
 
       <!-- MENU CARDS -->
-       <section class="menu-cards">
+       <section class="menu-cards" role="region" aria-label="Menu items">
        <!-- CARD 1 -->
        <div class="menu-card">
         <!-- IMAGE + ICONS 
@@ -218,9 +236,10 @@
        </div>
        </section>
        <a href="#menu-top" class="menu-back-btn">BACK</a>
+       </main>
 
        <!-- FOOTER -->
-        <footer class="footer">
+        <footer class="footer" role="contentinfo">
             <div class="footer-divider"></div> <!-- The line that I created to divide the sections -->
 
             <div class="footer-content">
