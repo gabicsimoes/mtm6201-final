@@ -15,11 +15,14 @@
     <title>Home Page</title>
 </head>
 <body>
+    <!-- Adding Skip Links -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#site-navigation" class="skip-link">Skip to navigation</a>
     <!-- HEADER
      LOGO + HAMBURGUER + LINE SECTION DIVIDER 
      -->
     <!-- Organazing the Header Menu for Mobile First wich is a Hamburguer Menu Icon to open the dropdown to the menu for mvoile, the icon I did on Figma as SVG as well the x-button to close the hambuguer -->
-    <header class="site-header"> <!-- This is the class for the whole header -->
+    <header class="site-header" role="banner"> <!-- This is the class for the whole header -->
         <!-- I didn't know how to create the dropdown for my hamburguer menu, so I asked AI and I was insecure because she said to use a checkbox, and then I search on Google other options using details and summary and other one using buttons and a href. I didn't know any either, and I tried the checkbox before and worked exatcly in the way that I wanted, so I keep it.
         What I understand was: it is a box to check something, but on CSS I'll gonna hide the checkbox to do not click on a box, and I gonna label the hamburguer to click and show the dropdown box, and label the "x" to close the dropdown, and I'll style the colour, corners, etc to look like more similar to mine.
         I'm not trying many things this time, what works for me in the way that I want, and if I am understanding the process, I will keep, I hope I would be safe. -->
@@ -41,7 +44,7 @@
         </div>
 
             <!-- MENU MOBILE -->
-             <nav class="mobile-nav">
+             <nav class="mobile-nav" id="site-navigation" role="navigation">
                 <!-- X ICON to close the dropdown that I opened using the hamburguer -->
                  <label for="dropdown-box" class="dropdown-close">
                     <img src="assets/icons/x-button.svg" alt="X Button to close the dropdown menu">
@@ -61,14 +64,30 @@
 
     <!-- HERO BANNER SECTION
      Image Hero + Overlay Black with Opacity + Text on the image + 2 buttons to go to menu page and catering page -->
-    <section class="hero">
+    <!-- Adding a main tag to put the id for the skiplink -->
+    <main id="main-content" role="main">
+        <!-- I didn't remember the schema that much, so I searched on the accessible-me assignment and on the website, and I asked AI which ones would be great to use, even though there is a "fake" restaurant/company -->
+        <article itemscope itemtype="https://schema.org/Organization">
+            <meta itemprop="name" content="Plant Palette">
+            <meta itemprop="url" content="https://www.plantpalette.com">
+            <meta itemprop="logo" content="assets/images/logo-plantpalette.png">
+            <meta itemprop="sameAs" content="https://www.instagram.com/">
+            <meta itemprop="sameAs" content="https://www.facebook.com/">
+        </article>
+
+        <article itemscope itemtype="https://schema.org/WebPage">
+            <meta itemprop="name" content="Plant Palette Home">
+            <meta itemprop="description" content="Wholesome plant-based food made with intention. Seasonal menus, catering services, and mindful cooking.">
+        </article>
+        
+    <section class="hero" role="region" aria-labelledby="hero-title"> <!-- role=region to identify  significant section of the page for important content and aria-labelledby is to give a name or a label to the text that I already have in another place of the page, like "look this is the title of the field that is written/shown by that ID" -->
         <!-- Image of the Hero -->
              <img src="assets/images/hero-home.jpg" alt="A white woden table fill of lots of healthy food bowl and salads and soup and some vegetables">
              
         <div class="hero-content">
     
             <!-- Text of the Hero -->
-            <h1>Wholesome plant-based food made with intention</h1>
+            <h1 id="hero-title">Wholesome plant-based food made with intention</h1>
             <p>A menu inspired by seasonal ingredients, community and mindful cooking.</p>
 
             <!-- Buttons of the Hero -->
@@ -82,9 +101,9 @@
     <!-- EVENTS + ABOUT SECTION -->
      <!-- When I was doing the media query for tablet I had a tough moment to grid in 2 columns both, so I did a wrapper to join both in the same section and menage this -->
     <section class="events-about-wrapper">
-    <section class="events-section">
+    <section class="events-section" role="region" aria-labelledby="events-title">
         <div class="events-text-wrapper">
-        <h2>Past events at Plant Palette</h2>
+        <h2 id="events-title">Past events at Plant Palette</h2>
         <!-- These paragraphs are exceptionally small (12px) -->
         <p class="events-text-regular">We are proud to offer catering and events services, creating special menus for intimate dinners, seasonal celebrations and corporate gatherings. Every moment is planned with care, using fresh ingredients and a welcoming service that aims to bring people closer. Here, every event tells a story, an experience made with intention.</p>
         <p class="events-text-bold">In our restaurant, we serve our regular à la carte menu, crafted for dine-in meals. For events, we offer a separate catering menu, designed specifically for groups, celebrations and larger portions meant for sharing. Two menus, two experiences, choose the one that fits your moment.</p>
@@ -104,7 +123,7 @@
 
     <!-- ABOUT SECTION -->
     <!-- There's no about page so the button that has in this section doesn't go anywhere, but this box is a "pretend" of a text to go to about if I had one -->
-    <section class="about-section">
+    <section class="about-section" role="region" aria-label="About Plant Palette"> <!-- I don't think this is ideal but I don't have a title/heading for this section so I chose to put aria-label than aria-labelledby -->
         <div class="about-box">
             <img src="assets/images/about-image.jpg" alt="Fresh vegetables in baskets and plastic bags" class="about-image">
 
@@ -114,9 +133,10 @@
         </div>
     </section>
     </section>
+    </main>
 
     <!-- FOOTER MENU -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="footer-divider"></div> <!-- The line that I created to divide the sections -->
 
         <div class="footer-content">
