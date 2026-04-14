@@ -916,6 +916,19 @@ I copied the properties from the others buttons here and just changed the class 
     display: inline-block;
 }
 
+/* HIDING THE SKIP LINKS
+I did same way I did on the acessible-me assignment because I barely remeber this part, so I was checking references that I already have just to do not create something new */
+.skip-link {
+  position: absolute; /* removes the element from the normal flow of the page without affecting the layout */
+  top: -10em; /* To put the skip link all the way up until disappear */
+}
+
+.skip-link:focus {
+  background-color: var(--beige);
+  color: var(--brown);
+  top: 0; /* come back when its in focus by tab on a keyboard */
+}
+
 /****************
  MEDIA QUERIES
 *****************/
