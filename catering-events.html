@@ -15,6 +15,10 @@
     <title>Catering & Events Page</title>
 </head>
 <body>
+    <!-- Adding Skip Links -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#site-navigation" class="skip-link">Skip to navigation</a>
+
     <!-- HEADER
      LOGO + HAMBURGUER + LINE SECTION DIVIDER 
      I copied and pasted the same header from the other pages -->
@@ -39,7 +43,7 @@
         </div>
 
             <!-- MENU MOBILE -->
-             <nav class="mobile-nav">
+             <nav class="mobile-nav" id="site-navigation" role="navigation">
                 <!-- X ICON to close the dropdown that I opened using the hamburguer -->
                  <label for="dropdown-box" class="dropdown-close">
                     <img src="assets/icons/x-button.svg" alt="X Button to close the dropdown menu">
@@ -57,9 +61,23 @@
              </nav>
     </header>
 
+    <main id="main-content" role="main">
+        <article itemscope itemtype="https://schema.org/Organization">
+            <meta itemprop="name" content="Plant Palette">
+            <meta itemprop="url" content="https://www.plantpalette.com">
+            <meta itemprop="logo" content="assets/images/logo-plantpalette.png">
+            <meta itemprop="sameAs" content="https://www.instagram.com/">
+            <meta itemprop="sameAs" content="https://www.facebook.com/">
+        </article>
+
+        <article itemscope itemtype="https://schema.org/WebPage">
+            <meta itemprop="name" content="Plant Palette – Catering & Events">
+            <meta itemprop="description" content="Catering services, event hosting, buffet options, testimonials, and event planning at Plant Palette.">
+        </article>
+
     <!-- 1ST SECTION - CATERING & EVENTS/HOW IT WORKS -->
      <!-- I do multiple div to divide the things in a way that makes sense for me. The reasoning is always: section to establish the section that I'm working on, then div and class as much as possible to give me the option to stylizing the CSS in specific points -->
-     <section class="catering-hero">
+     <section class="catering-hero" role="region" aria-label="Catering introduction">
         <h1 class="catering-title">Catering & Events</h1>
         <p class="catering-intro">
             We bring fresh, vibrant and thoughtful crafted dishes to your gatherings, from intimate celebrations to large corporate events.
@@ -79,13 +97,13 @@
      </section>
 
      <!-- 2nd SECTION - IMAGE + BUTTON EVENT GALLERY -->
-      <section class="event-gallery">
+      <section class="event-gallery" role="region" aria-label="Event gallery">
         <img src="assets/images/catering-events1.jpg" alt="A corporate gathering with four people in a wodden table with plates of food" class="event-gallery-image">
         <a href="#" class="event-gallery-btn">SEE EVENT GALLERY</a>
       </section>
 
       <!-- 3rd SECTION - TESTIMONIALS + PLANNING AN EVENT? -->
-       <section class="event-testimonials">
+       <section class="event-testimonials" role="region" aria-label="Testimonials and event planning">
         <div class="event-testimonials-image-wrapper">
             <img src="assets/images/testimonials-section.jpg" alt="A catering display with wooden table shelfs with finger foods" class="event-testimonials-image">
         </div>
@@ -107,7 +125,8 @@
        </section>
 
        <!-- 4TH SECTION - GATHER, CELEBRATE, ENJOY! -->
-        <section class="gather-section">
+        <!-- I don't have a heading that gives a title for the section exactly so that's why I did aria-label again and not labelledby -->
+        <section class="gather-section" role="region" aria-label="Gather, celebrate, enjoy section">
             <div class="gather-image-wrapper">
                 <img src="assets/images/catering-events3.jpg" alt="A gathering in a big table fill of food and drinks" class="gather-image">
                 <div class="gather-overlay"></div>
@@ -122,10 +141,11 @@
                 </div>
             </div>
         </section>
+        </main>
 
         <!-- FOOTER -->
          <!-- The footer I copied and pasted from the other pages because they're all the same -->
-        <footer class="footer">
+        <footer class="footer" role="contentinfo">
             <div class="footer-divider"></div> <!-- The line that I created to divide the sections -->
 
             <div class="footer-content">
